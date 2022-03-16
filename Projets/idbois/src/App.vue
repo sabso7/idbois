@@ -1,3 +1,4 @@
+<meta name="description" content="page d'accueil, information sur les terasse bois, gallerie de photos de terasse bois, contact pour la pose de terasse bois">
 <template>
 <v-app>
     <navbar></navbar>
@@ -6,7 +7,7 @@
         <v-row no-gutters>
             <v-col class="primary lighten-2 text-blanc text-center py-4 white--text" cols="6">
                 <v-row class='mt-5' justify='center'>
-                    <v-img :class='mq' id='logo-footer' src='@/assets/logo/logo2.png'></v-img>
+                    <v-img alt='logo idbois' :class='mq' id='logo-footer' src='@/assets/logo/logo2.png'></v-img>
                 </v-row>
                 <v-row class='mt-5' justify='center'>
                     {{ new Date().getFullYear() }} - ©<strong>IDB</strong>ois

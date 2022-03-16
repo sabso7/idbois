@@ -1,6 +1,7 @@
 <template>
+<meta name="description" content="page d'accueil de idbois terasse bois">
 <v-container id='accueil' fluid class='pa-0 content-home'>
-    <v-img id='home-banner' :src=' mq.current === "xs" ? require("../assets/img-site/woodfond.jpg"): require("../assets/img-site/fond.jpg")'>
+    <v-img id='home-banner' alt='vieux bois de terasse' :src=' mq.current === "xs" ? require("../assets/img-site/woodfond.jpg"): require("../assets/img-site/fond.jpg")'>
         <div id='main-title'>
             <v-row class="ma-4" justify='center'>
                 <h1 style='font-size:8em;' class='text-blanc text-font2 text-size3' :class='mq'><span class='text-o'>ID</span>B<span class='text-font'>ois</span></h1>
@@ -26,7 +27,7 @@
 <v-container v-if='mq.current === "xs" || mq.current === "sm"' fluid>
     <v-row justify='center' class='ma-5'>
         <v-card class='circular-img' :class='mq'>
-            <v-img class='img-rounded' :class='mq' src='@/assets/img-site/deck.jpg'></v-img>
+            <v-img alt='lame de bois pour terasse' class='img-rounded' :class='mq' src='@/assets/img-site/deck.jpg'></v-img>
         </v-card>
     </v-row>
     <v-row class='ma-3' justify='center' align='center'>
@@ -37,7 +38,7 @@
     </v-row>
     <v-row justify='center' align='center' class='ma-5'>
         <v-card class='circular-img' :class='mq'>
-            <v-img class='img-rounded' :class='mq' src='@/assets/img-site/hammer.jpg'></v-img>
+            <v-img alt='marteau sur bois de terasse' class='img-rounded' :class='mq' src='@/assets/img-site/hammer.jpg'></v-img>
         </v-card>
     </v-row>
     <v-row class='ma-3' justify='center' align='center'>
@@ -63,7 +64,7 @@
         <v-col cols='6'>
             <v-row justify='center'>
                 <v-card class='circular-img' :class='mq'>
-                    <v-img class='img-rounded' :class='mq' src='@/assets/img-site/deck.jpg'></v-img>
+                    <v-img alt='lame de bois pour terasse' class='img-rounded' :class='mq' src='@/assets/img-site/deck.jpg'></v-img>
                 </v-card>
             </v-row>
         </v-col>
@@ -72,7 +73,7 @@
         <v-col cols='6'>
             <v-row justify='center'>
                 <v-card class='circular-img' :class='mq'>
-                    <v-img class='img-rounded' :class='mq' src='@/assets/img-site/hammer.jpg'></v-img>
+                    <v-img alt='marteau sur bois de terasse' class='img-rounded' :class='mq' src='@/assets/img-site/hammer.jpg'></v-img>
                 </v-card>
             </v-row>
         </v-col>
@@ -102,7 +103,7 @@
     </v-row>
     <v-row justify='center'>
         <v-card class='circular-img mt-15' :class='mq'>
-            <v-img class='img-rounded' :class='mq' src='@/assets/img-site/phone.jpg'></v-img>
+            <v-img alt='téléphone sur bois de terasse' class='img-rounded' :class='mq' src='@/assets/img-site/phone.jpg'></v-img>
         </v-card>
     </v-row>
     <v-row justify='center'>
