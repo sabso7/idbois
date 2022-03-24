@@ -3,7 +3,7 @@
     <v-container>
         <masonry-wall  :items="picList" :ssr-columns="1" :column-width=" mq.current == 'xs' ? 150:400" :padding="0">
             <template #default="{ item }">
-                <v-img alt='photo de terasse en bois' style="border: solid 5px transparent; border-radius:3%" :src="item"></v-img>
+                <v-img alt='photo de terasse en bois' style="border: solid 5px transparent; border-radius:2%" :src="item"></v-img>
             </template>
         </masonry-wall>
     </v-container>

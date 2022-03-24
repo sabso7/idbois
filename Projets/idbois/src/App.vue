@@ -1,4 +1,4 @@
-<meta name="description" content="page d'accueil, information sur les terasse bois, gallerie de photos de terasse bois, contact pour la pose de terasse bois">
+<meta name="description" content="">
 <template>
 <v-app>
     <navbar></navbar>
@@ -15,13 +15,13 @@
             </v-col>
             <v-col class="primary lighten-2 text-blanc text-center py-4 white--text mt-3" cols="6">
                 <v-row class='mt-5' justify='center'>
-                    <h5 class='text-font2'>+33 06 35 22 53 76</h5>
+                    <h4 class='text-font3'>+33 06 35 22 53 76</h4>
                 </v-row>
                 <v-row class='mt-5' justify='center'>
-                    <h5 class='text-font2'>cbassobondini@yahoo.fr</h5>
+                    <h4 class='text-font3'>cbassobondini@yahoo.fr</h4>
                 </v-row>
                 <v-row class='mt-5' justify='center'>
-                    <h5 class='text-font2'>359 Route de la molière 74150 Marcellaz Albanais</h5>
+                    <h4 class='text-font3'>359 Route de la molière 74150 Marcellaz Albanais</h4>
                 </v-row>
             </v-col>
         </v-row>
@@ -32,11 +32,8 @@
 <script>
 import navbar from "./components/NavBar.vue";
 export default {
+    inject: ["mq"],
     name: 'App',
-
-    data: () => ({
-        //
-    }),
     components: {
         navbar
     }
@@ -47,6 +44,13 @@ export default {
 body,
 html {
     height: 100%;
+}
+
+.text-font3 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size:0.7em;
+    font-display: swap;
 }
 
 .text-blanc {

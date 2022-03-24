@@ -110,10 +110,10 @@
         <h2 style='font-size:2em;' class='text-font2 text-size1 mt-15' :class='mq'><span class='text-o'>Contactez-moi</span> pour un devis gratuit</h2>
     </v-row>
     <v-row class='mt-15' justify='center'>
-        <h3 class='text-font1 text-size1' :class='mq'>+33 06 35 22 53 76</h3>
+        <h3 class='text-font1 text-size4' :class='mq'>+33 06 35 22 53 76</h3>
     </v-row>
     <v-row class='mt-10 mb-15' justify='center'>
-        <h3 class='text-font1 text-size1' :class='mq'>cbassobondini@yahoo.fr</h3>
+        <h3 class='text-font1 text-size4' :class='mq'>cbassobondini@yahoo.fr</h3>
     </v-row>
 </v-container>
 </template>
@@ -138,9 +138,14 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
 
+@font-face {
+  font-display: swap;
+}
+
 .text-font {
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
+    font-display: swap;
 }
 
 .text-o {
@@ -150,6 +155,7 @@ export default {
 .text-font2 {
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
+    font-display: swap;
 }
 
 .text-size4.xs, .text-size4.sm {
